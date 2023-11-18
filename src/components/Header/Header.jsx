@@ -15,11 +15,10 @@ const Header = ({ setCoordinates }) => {
     setCoordinates({ lat, lng });
   };
   return (
-    <AppBar position="static">
+    <AppBar position="static" style={{ background: "#051D40" }}>
       <Toolbar className={classes.toolbar}>
-        <Typography variant="h5" className={classes.title}>
-          Travel Advisor
-        </Typography>
+        <img src={"/images/where2visit_logo.jpg"} alt="logo" width="200px" />
+
         <Box display="flex">
           <Typography variant="h6" className={classes.title}>
             Explore New Places!
